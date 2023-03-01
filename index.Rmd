@@ -1,0 +1,38 @@
+---
+title: "Burke Gilman Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(plotly)
+
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ggplotly(readRDS("BurkeBar.rds"))
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+ggplotly(readRDS("BurkePoint.rds"))
+```
+
+### Chart C
+
+```{r}
+ggplotly(readRDS("BurkePop.rds"))
+```
+
