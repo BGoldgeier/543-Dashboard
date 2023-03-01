@@ -73,7 +73,8 @@ pop<-ggplot(data = burke_pivot)+
                    yend = pyr_Value,
                    xend = month, 
                    color = Direction))+
-  labs(title = "Pedestrian Use of the Trail is Less Variable Across the Year Than Bike Usage",
+  labs(title = "Pedestrian Use of the Trail is Less Variable 
+Across the Year Than Bike Usage",
        x = "Month",
        y = "Average Count",
        caption = "Data collected at NE 70th St; 2014-2017 
@@ -97,9 +98,9 @@ trail<-read_sf(line_link)
 
 trail <- st_transform(trail, 4326)
 
-map<-leaflet(trail) %>%
+Burke_map<-leaflet(trail) %>%
   addPolylines(color = "blue", opacity = 1)%>%
   addTiles()
 
 
-saveRDS(map, file = "BurkeMap.rds")
+saveRDS(Burke_map, file = "Burke_map.rds")
