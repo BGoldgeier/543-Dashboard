@@ -12,27 +12,35 @@ library(plotly)
 
 ```
 
-Column {data-width=650}
------------------------------------------------------------------------
-
-### Chart A
-
-```{r}
-ggplotly(readRDS("BurkeBar.rds"))
-```
-
 Column {data-width=350}
 -----------------------------------------------------------------------
+
+### Map
+```{r}
+readRDS(url("https://github.com/BGoldgeier/543-Dashboard/raw/main/Burke_map.rds"))
+```
+
+
+
+Column {.tabset .tabset-fade data-width=650}
+-----------------------------------------------------------------------
+### Chart A
+
+
+```{r}
+readRDS(url("https://github.com/BGoldgeier/543-Dashboard/raw/main/BurkeBar.rds"))
+```
+
 
 ### Chart B
 
 ```{r}
-ggplotly(readRDS("BurkePoint.rds"))
+readRDS(url("https://github.com/BGoldgeier/543-Dashboard/raw/main/BurkePoint.rds"))
 ```
 
 ### Chart C
 
 ```{r}
-ggplotly(readRDS("BurkePop.rds"))
+readRDS(url("https://github.com/BGoldgeier/543-Dashboard/raw/main/BurkePop.rds"))
 ```
 
