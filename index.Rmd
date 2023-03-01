@@ -12,17 +12,17 @@ library(plotly)
 
 ```
 
-Column {data-width=350}
+Column {data-width=300}
 -----------------------------------------------------------------------
 
-### Map
+### Map of the Burke Gilman Trail
 ```{r}
 readRDS(url("https://github.com/BGoldgeier/543-Dashboard/raw/main/Burke_map.rds"))
 ```
 
 
 
-Column {.tabset .tabset-fade data-width=650}
+Column {.tabset .tabset-fade data-width=700}
 -----------------------------------------------------------------------
 ### Chart A
 
