@@ -73,8 +73,7 @@ pop<-ggplot(data = burke_pivot)+
                    yend = pyr_Value,
                    xend = month, 
                    color = Direction))+
-  labs(title = "Pedestrian Use of the Trail is Less Variable 
-Across the Year Than Bike Usage",
+  labs(title = "Bike Usage is more Variable Across the Year",
        x = "Month",
        y = "Average Count",
        caption = "Data collected at NE 70th St; 2014-2017 
