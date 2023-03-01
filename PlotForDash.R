@@ -92,3 +92,14 @@ saveRDS(pop, file = "BurkePop.rds")
 
 #########Map#########
 
+line_link<-"https://github.com/BGoldgeier/543-Dashboard/raw/main/BG_json.geojson"
+trail<-read_sf(line_link)
+
+trail <- st_transform(trail, 4326)
+
+map<-leaflet(trail) %>%
+  addPolylines(color = "blue", opacity = 1)%>%
+  addTiles()
+
+
+saveRDS(map, file = "BurkeMap.rds")
